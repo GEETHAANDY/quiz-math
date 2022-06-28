@@ -1,3 +1,17 @@
+# Import modules
+import time
+import sys
+
+# Create countdown function
+def countdown(t):
+    while t > 0:
+        sys.stdout.write('\rDuration : {}s'.format(t))
+        t -= 1
+        sys.stdout.flush()
+        time.sleep(1)
+
+countdown(10)
+
 #Convert the 0 into a number so we can add scores
 score = 0
 score = int(score)
